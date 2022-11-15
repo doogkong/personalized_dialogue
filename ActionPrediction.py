@@ -11,10 +11,10 @@ class ActionPrediction(BaseModel):
         params,
         context_encoder=None,
         pretrained_word_embedders=None,
-        coltrane_params=None,
+        Robert_params=None,
         **kwargs
     ):
-        super(ColtraneActionPrediction, self).__init__()
+        super(RobertActionPrediction, self).__init__()
 
         self.params = params
         self.y_attr = self.params.y_attr

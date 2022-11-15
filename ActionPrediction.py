@@ -40,7 +40,7 @@ class ActionPrediction(BaseModel):
         self.batch_normalization = ff_params.get("batch_normalization", DEFAULT_BATCH_NORMALIZATION)
 
         self.ood_index = None
-        ood_action = ALEXA_NLG + "_" + OUT_OF_DOMAIN
+        ood_action = BERT_NLG + "_" + OUT_OF_DOMAIN
 
         if ood_action in self.action_name_to_id:
             self.ood_index = self.action_name_to_id[ood_action]
